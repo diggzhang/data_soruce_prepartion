@@ -62,8 +62,9 @@ onions_data_preparetion() {
 main()
 {
     log "version $VERSION"
-    log "(1/1) onions_data_preparetion"
+    log "(0/1) start onions_data_preparetion"
     onions_data_preparetion >> "$LOGFILE"
+    log "(1/1) end onions_data_preparetion"
 }
 
 main "$@"
