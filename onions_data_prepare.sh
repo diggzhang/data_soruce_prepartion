@@ -39,7 +39,7 @@ YEAR=$(date -d -0day '+%Y')
 MONTH=$(date -d -0day '+%m')
 DAY=$(date -d -0day '+%d')
 LOGFILE=/tmp/airflow_scheduling_"$YEAR$MONTH$DAY".log
-WORK_DIR=/home/master/dag_scheduler_jobs/onions_data_source/
+WORK_DIR=/home/master/yangcongDatabase/v4collections/online_data_preparetion/
 
 #---------------------------------------------------------------------
 # UTILITY FUNCTIONS
@@ -55,9 +55,7 @@ log ()
 # Define script functions here
 
 onions_data_preparetion() {
-    log $(date)
     ssh -p 233 backup@vpcdoor "/bin/bash /home/backup/Scripts/data_dev/vpcdoor_onions_preparetion.sh"
-    log $(date)
 }
 
 
