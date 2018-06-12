@@ -48,8 +48,8 @@ WORK_DIR=/home/master/yangcongDatabase/v4collections/online_data_preparetion/
 # log message to screen and log file
 log ()
 {
-    echo "[${SCRIPT_NAME}]: $1" >> "$LOGFILE"
-    echo "[${SCRIPT_NAME}]: $1"
+    echo "[${SCRIPT_NAME}]: $@" >> "$LOGFILE"
+    echo "[${SCRIPT_NAME}]: $@"
 }
 
 # Define script functions here
